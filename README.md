@@ -135,19 +135,7 @@ The physics penalty P activates when the model predicts canopy decline on a ther
 | Model parameters | ~21,300 | ~1,100 |
 | Training windows | 5 per plant | 63 pooled |
 
-Per-plant GCC results (revised pipeline):
 
-| Plant | MAE (GCC) | MAPE (%) | Beats Naive | Beats Persistence |
-|---|---|---|---|---|
-| 11 | 0.00181 | 0.50 | ✅ | ❌ |
-| 13 | 0.00148 | 0.42 | ❌ | ❌ |
-| 14 | 0.00100 | 0.29 | ❌ | ❌ |
-| 15 | 0.00039 | 0.11 | ✅ | ❌ |
-| 21 | 0.00017 | 0.05 | ✅ | ✅ |
-| 22 | 0.00082 | 0.22 | ✅ | ✅ |
-| 23 | 0.00083 | 0.24 | ❌ | ❌ |
-| 24 | 0.00094 | 0.27 | ❌ | ✅ |
-| 25 | 0.00297 | 0.81 | ✅ | ✅ |
 
 > **Note on Plants 13 and 14:** GCC was nearly constant across the 9-day winter window (Naive MAE ≈ 0.00024), indicating near-dormant conditions. Any model predicting a non-zero delta will appear worse than the naive mean — this is a data limitation, not a model failure.
 
